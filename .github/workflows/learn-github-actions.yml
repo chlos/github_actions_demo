@@ -30,3 +30,11 @@ jobs:
         with:
             name: ls-output-file
             path: cd_output.log
+  download-artifact:
+    name: Download artifact (ls workspace)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download
+        uses: actions/download-artifact@v3
+        with:
+            name: ls-output-file
