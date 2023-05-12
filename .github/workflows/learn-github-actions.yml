@@ -19,6 +19,10 @@ jobs:
         shell: bash
         run: |
           ls ${{ github.workspace }} > cd_output.log
+      - name: Cat output
+        shell: bash
+        run: |
+          cat cd_output.log
       - name: Upload output file
         uses: actions/upload-artifact@v3
         with:
