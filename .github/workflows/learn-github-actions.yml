@@ -39,3 +39,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
             name: ls-output-file
+      - name: Cat downloaded artifact
+        shell: bash
+        run: |
+          cat cd_output.log
