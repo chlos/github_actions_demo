@@ -11,3 +11,15 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+  upload-artifact:
+    name: Upload artifact
+    runs-on: ubuntu-latest
+    steps:
+      - name: get ls output
+        run: |
+          ls ${{ github.workspace }} > cd_output.log
+      - name: upload output file
+        uses: actions/upload-artifact@v3
+        with:
+            name: ls-output-file
+            path: cd_output.log
