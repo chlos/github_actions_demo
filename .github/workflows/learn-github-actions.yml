@@ -15,10 +15,11 @@ jobs:
     name: Upload artifact
     runs-on: ubuntu-latest
     steps:
-      - name: get ls output
+      - name: Get ls output
+        shell: bash
         run: |
           ls ${{ github.workspace }} > cd_output.log
-      - name: upload output file
+      - name: Upload output file
         uses: actions/upload-artifact@v3
         with:
             name: ls-output-file
