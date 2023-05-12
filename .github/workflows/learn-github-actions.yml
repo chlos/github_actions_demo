@@ -33,6 +33,7 @@ jobs:
   download-artifact:
     name: Download artifact (ls workspace)
     runs-on: ubuntu-latest
+    needs: upload-artifact
     steps:
       - name: Download
         uses: actions/download-artifact@v3
