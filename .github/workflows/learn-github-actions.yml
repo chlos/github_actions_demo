@@ -1,6 +1,7 @@
 name: Learn GitHub Actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
+
 jobs:
   check-bats-version:
     name: Check bats version
@@ -12,6 +13,7 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+
   upload-artifact:
     name: Upload artifact (ls workspace)
     runs-on: ubuntu-latest
@@ -31,6 +33,7 @@ jobs:
         with:
             name: ls-output-file
             path: cd_output.log
+
   download-artifact:
     name: Download artifact (ls workspace)
     runs-on: ubuntu-latest
@@ -44,6 +47,7 @@ jobs:
         shell: bash
         run: |
           cat cd_output.log
+
   log-contexts:
     name: Print some contexts
     runs-on: ubuntu-latest
