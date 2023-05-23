@@ -99,6 +99,7 @@ jobs:
   #         last_name: Octocat
 
   generate-ausecret-output:
+    name: Generate autosecret output
     runs-on: ubuntu-latest
     steps:
       - id: sets-a-secret
