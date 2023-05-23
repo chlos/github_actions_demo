@@ -132,7 +132,7 @@ jobs:
       - name: Step 1
         run: |
           echo "### Step :one:" >> $GITHUB_STEP_SUMMARY
-          echo "Finished :check_mark_button:" >> $GITHUB_STEP_SUMMARY
+          echo "Finished :rocket:" >> $GITHUB_STEP_SUMMARY
       - name: Step 2
         run: |
           echo "### Step :two:" >> $GITHUB_STEP_SUMMARY
