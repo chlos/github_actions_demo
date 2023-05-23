@@ -47,7 +47,6 @@ jobs:
         run: |
           cat cd_output.log
 
-  # test
   outputs-src:
     name: Test outputs (source)
     runs-on: ubuntu-latest
