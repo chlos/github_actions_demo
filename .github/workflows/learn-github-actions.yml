@@ -124,3 +124,14 @@ jobs:
           echo '::warning:: This will NOT be rendered as a warning, because stop-commands has been invoked.'
           echo "::$stopMarker::"
           echo '::warning:: This is a warning again, because stop-commands has been turned off.'
+
+  step-summary:
+    name: Print step summaries
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: |
+          echo "### Step :one:" >> $GITHUB_STEP_SUMMARY
+      - name: Step 2
+        run: |
+          echo "### Step :two:" >> $GITHUB_STEP_SUMMARY
