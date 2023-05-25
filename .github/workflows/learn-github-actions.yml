@@ -145,4 +145,5 @@ jobs:
     runs-on: ubuntu-latest
     needs: call-external-wf
     steps:
-      - run: echo ${{ needs.call-external-wf.outputs.firstword }} ${{ needs.call-external-wf.outputs.secondword }}
+      - run: |
+          echo "External WF output 1: ${{ needs.call-external-wf.outputs.firstword }}; external WF output 2 ${{ needs.call-external-wf.outputs.secondword }}"
