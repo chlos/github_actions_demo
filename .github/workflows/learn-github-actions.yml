@@ -137,3 +137,12 @@ jobs:
         run: |
           echo "### Step :two:" >> $GITHUB_STEP_SUMMARY
           echo "Finished" >> $GITHUB_STEP_SUMMARY
+
+  call-external-wf:
+    uses: octo-org/example-repo/.github/workflows/called-workflow.yml@v1
+  call-external-wf-print:
+    name: Call external workflow and print its output
+    runs-on: ubuntu-latest
+    needs: call-external-wf
+    steps:
+      - run: echo ${{ needs.call-external-wf.outputs.firstword }} ${{ needs.call-external-wf.outputs.secondword }}
