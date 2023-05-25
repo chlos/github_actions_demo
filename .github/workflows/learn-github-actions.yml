@@ -146,4 +146,5 @@ jobs:
     needs: call-external-wf
     steps:
       - run: |
-          echo "External WF output 1: ${{ needs.call-external-wf.outputs.firstword }}; external WF output 2 ${{ needs.call-external-wf.outputs.secondword }}"
+          echo "External WF output 1: ${{ needs.call-external-wf.outputs.firstword }}; "\
+          "external WF output 2 ${{ needs.call-external-wf.outputs.secondword }}"
