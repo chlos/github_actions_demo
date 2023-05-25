@@ -139,7 +139,7 @@ jobs:
           echo "Finished" >> $GITHUB_STEP_SUMMARY
 
   call-external-wf:
-    uses: .github/workflows/reusable-workflow-example.yml
+    uses: ./.github/workflows/reusable-workflow-example.yml
   call-external-wf-print:
     name: Call external workflow and print its output
     runs-on: ubuntu-latest
