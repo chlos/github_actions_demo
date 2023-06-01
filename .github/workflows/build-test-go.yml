@@ -1,4 +1,4 @@
-name: Go package
+name: Build and test Go projects
 
 on: [push]
 
