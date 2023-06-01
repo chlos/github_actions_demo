@@ -1,1 +1,2 @@
 # github_actions_demo
+[![Learn GitHub Actions](https://github.com/chlos/github_actions_demo/actions/workflows/learn-github-actions.yml/badge.svg)](https://github.com/chlos/github_actions_demo/actions/workflows/learn-github-actions.yml)
