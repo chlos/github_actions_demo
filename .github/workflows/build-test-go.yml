@@ -17,6 +17,13 @@ jobs:
         run: go build -v ./...
         working-directory: ./http_response_hash
 
+    #   - name: Test
+    #     run: go test -v ./...
+    #     working-directory: ./http_response_hash
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
       - name: Test
         run: go test -v ./...
         working-directory: ./http_response_hash
