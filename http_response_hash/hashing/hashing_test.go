@@ -21,11 +21,10 @@ func TestNewHashing(t *testing.T) {
 		expectedError bool
 	}{
 		{
-			testcase: "limit 0 - urls 0",
-			limit:    0,
-			urls:     []string{},
-			// expectedError: true,
-			expectedError: false,
+			testcase:      "limit 0 - urls 0",
+			limit:         0,
+			urls:          []string{},
+			expectedError: true,
 		},
 		{
 			testcase:      "limit 1 - urls 0",
