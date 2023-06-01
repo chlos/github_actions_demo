@@ -24,6 +24,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: ls
+        run: ls -lah .
       - name: Test
         run: go test -v ./...
         working-directory: ./http_response_hash
