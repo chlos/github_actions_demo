@@ -18,7 +18,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	h, err := hashing.NewHashing(config.ParallelLimit, config.URLs)
+	h, err := hashing.NewHashingFoo(config.ParallelLimit, config.URLs)
 	if err != nil {
 		fmt.Printf("Failed to init hashing: %v\n", err)
 		os.Exit(1)
