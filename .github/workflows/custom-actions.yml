@@ -8,7 +8,8 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: chlos/action-demo@v1
+        # uses: chlos/action-demo@v1
+        uses: chlos/action-tmp@v1
         with:
           who-to-greet: 'Egor 1'
       # Use the output from the `hello` step
