@@ -10,7 +10,7 @@ jobs:
         id: hello
         uses: chlos/action-docker-hello@v4
         with:
-          who-to-greet: 'Egor 1'
+          who-to-greet: 'Egor Docker'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
@@ -20,9 +20,9 @@ jobs:
     name: A job to say hello (composite)
     steps:
       - uses: actions/checkout@v3
-      - id: foo
+      - id: composite
         uses: chlos/action-composite-hello@v1
         with:
-          who-to-greet: 'Mona the Octocat'
+          who-to-greet: 'Egor Composite'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
