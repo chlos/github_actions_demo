@@ -4,7 +4,7 @@ on: [push]
 jobs:
   hello_world_job_docker:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to say hello (docker)
     steps:
       - name: Hello world action step
         id: hello
@@ -17,7 +17,7 @@ jobs:
 
   hello_world_job_composite:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to say hello (composite)
     steps:
       - uses: actions/checkout@v3
       - id: foo
